@@ -1,5 +1,6 @@
 {
   "name": "covidmap",
+  "homepage": "http://robertjfox.github.io/Covid19StateTracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
+    "gh-pages": "^2.2.0",
     "moving-averages": "^4.0.5",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
@@ -24,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
