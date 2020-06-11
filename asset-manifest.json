@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Covid19StateTracker/static/css/main.f201bb3a.chunk.css",
-    "main.js": "/Covid19StateTracker/static/js/main.922d35b8.chunk.js",
-    "main.js.map": "/Covid19StateTracker/static/js/main.922d35b8.chunk.js.map",
-    "runtime-main.js": "/Covid19StateTracker/static/js/runtime-main.f7bedd64.js",
-    "runtime-main.js.map": "/Covid19StateTracker/static/js/runtime-main.f7bedd64.js.map",
-    "static/js/2.193bc5ef.chunk.js": "/Covid19StateTracker/static/js/2.193bc5ef.chunk.js",
-    "static/js/2.193bc5ef.chunk.js.map": "/Covid19StateTracker/static/js/2.193bc5ef.chunk.js.map",
-    "index.html": "/Covid19StateTracker/index.html",
-    "precache-manifest.e0f6b33e193fd7f13f49c657d38761c7.js": "/Covid19StateTracker/precache-manifest.e0f6b33e193fd7f13f49c657d38761c7.js",
-    "service-worker.js": "/Covid19StateTracker/service-worker.js",
-    "static/css/main.f201bb3a.chunk.css.map": "/Covid19StateTracker/static/css/main.f201bb3a.chunk.css.map",
-    "static/js/2.193bc5ef.chunk.js.LICENSE.txt": "/Covid19StateTracker/static/js/2.193bc5ef.chunk.js.LICENSE.txt"
+    "main.css": "/CovidMap/static/css/main.f201bb3a.chunk.css",
+    "main.js": "/CovidMap/static/js/main.922d35b8.chunk.js",
+    "main.js.map": "/CovidMap/static/js/main.922d35b8.chunk.js.map",
+    "runtime-main.js": "/CovidMap/static/js/runtime-main.09bbbf64.js",
+    "runtime-main.js.map": "/CovidMap/static/js/runtime-main.09bbbf64.js.map",
+    "static/js/2.37573d76.chunk.js": "/CovidMap/static/js/2.37573d76.chunk.js",
+    "static/js/2.37573d76.chunk.js.map": "/CovidMap/static/js/2.37573d76.chunk.js.map",
+    "index.html": "/CovidMap/index.html",
+    "precache-manifest.9d6fc952108dcd2da663c5e41febd319.js": "/CovidMap/precache-manifest.9d6fc952108dcd2da663c5e41febd319.js",
+    "service-worker.js": "/CovidMap/service-worker.js",
+    "static/css/main.f201bb3a.chunk.css.map": "/CovidMap/static/css/main.f201bb3a.chunk.css.map",
+    "static/js/2.37573d76.chunk.js.LICENSE.txt": "/CovidMap/static/js/2.37573d76.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7bedd64.js",
-    "static/js/2.193bc5ef.chunk.js",
+    "static/js/runtime-main.09bbbf64.js",
+    "static/js/2.37573d76.chunk.js",
     "static/css/main.f201bb3a.chunk.css",
     "static/js/main.922d35b8.chunk.js"
   ]
