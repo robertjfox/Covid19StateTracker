@@ -1,6 +1,6 @@
 {
   "name": "covidmap",
-  "homepage": "http://robertjfox.github.io/Covid19StateTracker",
+  "homepage": "http://robertjfox.github.io/CovidMap",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

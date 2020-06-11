@@ -42,17 +42,10 @@ export const getStateData = () => async (dispatch) => {
       } else if (data[i].positiveIncrease) {
         DNCData[data[i].state] = [Math.max(data[i].positiveIncrease, 0)]
       }
-      if (
-        HospitalData[data[i].state] &&
-        data[i].hospitalizedIncrease !== null
-      ) {
-        HospitalData[data[i].state].push(
-          Math.max(data[i].hospitalizedIncrease, 0)
-        )
-      } else if (data[i].hospitalizedIncrease !== null) {
-        HospitalData[data[i].state] = [
-          Math.max(data[i].hospitalizedIncrease, 0),
-        ]
+      if (HospitalData[data[i].state] && data[i].deathIncrease !== null) {
+        HospitalData[data[i].state].push(Math.max(data[i].deathIncrease, 0))
+      } else if (data[i].deathIncrease !== null) {
+        HospitalData[data[i].state] = [Math.max(data[i].deathIncrease, 0)]
       }
     }
     let i = 0

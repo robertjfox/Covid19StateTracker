@@ -68,7 +68,7 @@ class HospitalChart extends React.Component {
 
       return (
         <div id="chart-container">
-          <h3>Daily Hospitalizations</h3>
+          <h3>Daily New Deaths</h3>
           <Bar data={stateData} options={options} />
         </div>
       )
