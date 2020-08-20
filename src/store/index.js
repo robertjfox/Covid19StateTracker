@@ -31,8 +31,9 @@ export const changeSelectedState = (selectedState) => ({
 export const getStateData = () => async (dispatch) => {
   try {
     const { data } = await axios.get(
-      'https://covidtracking.com/api/v1/states/daily.json'
+      'https://api.covidtracking.com/v1/states/daily.json'
     )
+
     let DNCData = { TEST: [] }
     let HospitalData = { TEST: [] }
     let TotalCounts = { TEST: [0, 0, 0, 0] }
