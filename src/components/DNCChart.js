@@ -59,7 +59,7 @@ const options = {
 const DNCChart = (props) => {
   const { data, selectedState } = props
 
-  if (data && selectedState) {
+  if (data && data[selectedState]) {
     const stateData = generateData(data[selectedState])
 
     return (

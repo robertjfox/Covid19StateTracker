@@ -16,18 +16,20 @@ export function debounce(fn, ms) {
 }
 
 export function getDates(data) {
-  let stopDate = new Date()
-  let startDate = new Date()
-  startDate.setDate(startDate.getDate() - data.length)
-
-  var dateArray = []
-  var currentDate = startDate
-  while (currentDate <= stopDate) {
-    let date = new Date(currentDate).toISOString().slice(0, 10)
-    dateArray.push(date)
-    currentDate = currentDate.addDays(1)
+  if (data) {
+    let stopDate = new Date()
+    let startDate = new Date()
+    startDate.setDate(startDate.getDate() - data.length)
+  
+    var dateArray = []
+    var currentDate = startDate
+    while (currentDate <= stopDate) {
+      let date = new Date(currentDate).toISOString().slice(0, 10)
+      dateArray.push(date)
+      currentDate = currentDate.addDays(1)
+    }
+    return dateArray
   }
-  return dateArray
 }
 
 export const stateNames = {

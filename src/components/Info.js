@@ -4,7 +4,7 @@ import { stateNames, statePops } from '../util'
 
 const Info = (props) => {
   const { totalCounts, selectedState } = props
-  if (totalCounts && selectedState) {
+  if (totalCounts && totalCounts[selectedState]) {
     return (
       <div id="info">
         <h1>{stateNames[selectedState]}</h1>

@@ -9,13 +9,15 @@ import { connect } from 'react-redux'
 import { getStateData } from './store'
 import { debounce } from './util'
 
-const App = (props) => {
+const App = ({getStateData, dncData, hospitalData}) => {
   const [loaded, setLoaded] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
 
+  const LOADING = !dncData['NY'] || !hospitalData['NY']
+
   useEffect(() => {
     if (!loaded) {
-      props.getStateData()
+      getStateData()
       setLoaded(true)
     }
     const debouncedHandleResize = debounce(
@@ -28,15 +30,18 @@ const App = (props) => {
     return () => {
       window.removeEventListener('resize', debouncedHandleResize)
     }
-  }, [props, width, loaded])
+  }, [getStateData, width, loaded])
 
-  console.log(width)
 
   return (
     <div className="App">
       <div id="top">
-        <MobileSelector />
-        <Map width={width} />
+        {!LOADING && (
+          <>
+            <MobileSelector />
+            <Map width={width} />
+          </>
+        )}
         <Info />
       </div>
       <div id="charts">
@@ -53,4 +58,11 @@ const mapDispatch = (dispatch) => {
   }
 }
 
-export default connect(null, mapDispatch)(App)
+const mapState = (state) => {
+  return {
+    dncData: state.DNCData,
+    hospitalData: state.HospitalData,
+  }
+}
+
+export default connect(mapState, mapDispatch)(App)

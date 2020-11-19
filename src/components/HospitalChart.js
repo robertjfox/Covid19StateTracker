@@ -63,7 +63,7 @@ class HospitalChart extends React.Component {
   render() {
     const { data, selectedState } = this.props
 
-    if (data && selectedState) {
+    if (data && data[selectedState]) {
       const stateData = generateData(data[selectedState])
 
       return (
