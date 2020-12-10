@@ -28,6 +28,16 @@ export const changeSelectedState = (selectedState) => ({
   selectedState,
 })
 
+export const getCountryData = () => async (dispatch) => {
+  try {
+    const { data } = await axios.get(
+      'https://api.covidtracking.com/v1/us/daily.json'
+    )
+  } catch (error) {
+    
+  }
+}
+
 export const getStateData = () => async (dispatch) => {
   try {
     const { data } = await axios.get(

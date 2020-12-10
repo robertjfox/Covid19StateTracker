@@ -39,7 +39,6 @@ class Map extends Component {
   render() {
     return (
       <div className="Map">
-        <button>Total</button>
         <USAMap
           customize={this.statesCustomConfig()}
           onClick={this.mapHandler}
